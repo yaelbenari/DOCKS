@@ -15,7 +15,7 @@ public class Docks {
         public static void main(String[] argv) throws IOException, InterruptedException, GRBException {
                 if (argv.length != 8 && argv.length != 7)
                         System.out.println("Usage: java -jar decycling.jar <outputfile> <inputfile> <k> <L> <alphabet> <ILP time limit> <0/1/2/3-random/greedyL/greedyAny/none> <x-optional with any>");
-                System.out.println("hellooo");
+                System.out.println("hellooo hayoosh");
                 
                 // Parse input
                 String outfile = argv[0];
