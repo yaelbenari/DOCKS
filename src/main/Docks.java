@@ -1,4 +1,4 @@
-package Docks;
+package main;
 import gurobi.GRBException;
 
 import java.io.BufferedReader;
@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Vector;
 
-public class DOCKS {
+public class Docks {
 
       
         public static void main(String[] argv) throws IOException, InterruptedException, GRBException {

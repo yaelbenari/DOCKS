@@ -1,0 +1,4 @@
+Name: .
+Manifest-Version: 1.0
+Main-Class: main.Docks
+Class-Path: ../lib/gurobi.jar
