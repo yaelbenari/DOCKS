@@ -1,0 +1,10 @@
+cd ../
+git pull origin master
+cd bin
+jar cvfm Docks.jar ../META-INF/manifest.MF  *
+java -jar Docks.jar $0 $1 $2 $3
+
+
+
+
+
