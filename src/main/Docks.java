@@ -13,25 +13,26 @@ import java.util.Vector;
 public class Docks {
 
 	public static void main(String[] argv) throws IOException, InterruptedException, GRBException {
-		if (argv.length != 8 && argv.length != 7)
+		/*if (argv.length != 8 && argv.length != 7)
 			System.out.println(
-					"Usage: java -jar decycling.jar <outputfile> <inputfile> <k> <L> <alphabet> <ILP time limit> <0/1/2/3-random/greedyL/greedyAny/none> <x-optional with any>");
-		System.out.println("Yael, 26.12");
+					"Usage: java -jar decycling.jar <outputfile> <inputfile> <k> <L> <alphabet> <ILP time limit> <0/1/2/3-random/greedyL/greedyAny/none> <x-optional with any>");*/
+		System.out.println("Yael, 26.12, NEW");
 
 		// Parse input
-		String outfile = argv[0];
-		String infile = argv[1];
-		int k = Integer.parseInt(argv[2]);
-		int L = Integer.parseInt(argv[3]);
-		String alphabet = argv[4];
+		String outfile = "res_15_100_ACGT_0_2_10000.txt";
+		String infile = "decycling_15_ACGT.txt";
+		
+		int k = 15;
+		int L = 100;
+		String alphabet = "ACGT";
 		int alphabetSize = alphabet.length();
 		Vector<Integer> e = new Vector<Integer>();
 		PrintWriter writer = new PrintWriter(outfile);
-		int time = Integer.parseInt(argv[5]);
-		int random = Integer.parseInt(argv[6]);
-		int x = 1;
-		if (argv.length > 7)
-			x = Integer.parseInt(argv[7]);
+		int time = 0;
+		int random = 2;
+		int x = 10000;
+	/*	if (argv.length > 7)
+			x = Integer.parseInt(argv[7]);*/
 
 		// Find k-mer hitting set
 		Vector<Integer> d = readKmers(infile, alphabet, alphabetSize);
